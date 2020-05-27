@@ -1,4 +1,4 @@
-# DeafDance
+# ASL-Classifier
 This repository contains my analysis and the project on sign languages. In this repository I have used [ASL-sign language](https://en.wikipedia.org/wiki/American_Sign_Language) which is a common sign language used by most of the communities.
 <br>
 ## Sign Languages
