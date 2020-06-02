@@ -5,9 +5,46 @@ import math
 import os
 from PIL import Image
 
-model = keras.models.load_model('keras.model')
+model = keras.models.load_model('../keras.model')
 
-
+classes = {
+    '0': 0,
+    '1': 1,
+    '2': 2,
+    '3': 3,
+    '4': 4,
+    '5': 5,
+    '6': 6,
+    '7': 7,
+    '8': 8,
+    '9': 9,
+    'a': 10,
+    'b': 11,
+    'c': 12,
+    'd': 13,
+    'e': 14,
+    'f': 15,
+    'g': 16,
+    'h': 17,
+    'i': 18,
+    'j': 19,
+    'k': 20,
+    'l': 21,
+    'm': 22,
+    'n': 23,
+    'o': 24,
+    'p': 25,
+    'q': 26,
+    'r': 27,
+    's': 28,
+    't': 29,
+    'u': 30,
+    'v': 31,
+    'w': 32,
+    'x': 33,
+    'y': 34,
+    'z': 35,
+}
 def identifyGesture(handTrainImage):
     # saving the sent image for checking
     # cv2.imwrite("/home/snrao/IDE/PycharmProjects/ASL Finger Spelling Recognition/a0.jpeg", handTrainImage)
@@ -234,7 +271,7 @@ try:
         cv2.imshow('HandTrain', handTrainImage)
 
         # Check for user input to close program
-        keyPressed = cv2.waitKey(30)  # wait 30 miliseconds in each iteration of while loop
+        keyPressed = cv2.waitKey(30)  # wait 30 miliseconds in each iteration of while loops
 except:
     print("Error Occured")
     cv2.destroyAllWindows()
